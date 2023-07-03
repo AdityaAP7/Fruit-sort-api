@@ -1,0 +1,54 @@
+⭐ Assigment - Aditya Palodkar 
+
+Technologies used - NodeJS and Express
+
+D. API in NodeJs/Python
+Create a class "Fruit" with the following fields: id, name, color
+Create an API that will return a sorted List of "Fruit" objects based on color
+
+⭐ Writing everything in the proper documentation format
+
+### Project Setup and Execution Steps:
+
+1. **Installation**: Make sure you have Node.js installed on your machine.
+
+2. **Project Initialization**: Create a new project directory and navigate to it in your terminal.
+
+3. **Create Files and Folders**:
+   - Create an `index.js` file in the project root directory.
+   - Create a `models` folder and inside it, create a `Fruit.js` file.
+   - Create a `controllers` folder and inside it, create a `FruitController.js` file.
+   - Create a `routes` folder and inside it, create a `fruitRoutes.js` file.
+
+4. **Implement the Fruit Model**:
+   - Open the `Fruit.js` file in the `models` folder.
+   - Define the `Fruit` class with the `id`, `name`, and `color` fields.
+   - Export the `Fruit` class.
+
+5. **Implement the Fruit Controller**:
+   - Open the `FruitController.js` file in the `controllers` folder.
+   - Import the `Fruit` model.
+   - Create a function, e.g., `getSortedFruits`, that handles the logic for sorting the list of `Fruit` objects based on color.
+   - Export the `getSortedFruits` function.
+
+6. **Define the Fruit Routes**:
+   - Open the `fruitRoutes.js` file in the `routes` folder.
+   - Import the required dependencies (`express`, `FruitController`).
+   - Create an instance of `express.Router()`.
+   - Define the route for the root path ("/") and map it to the `getSortedFruits` method from the `FruitController`.
+   - Export the router.
+
+7. **Set Up the Server**:
+   - Open the `index.js` file.
+   - Import the required dependencies (`express`, `fruitRoutes`).
+   - Create an instance of the Express application.
+   - Mount the `fruitRoutes` under the root path ("/") using `app.use()`.
+   - Start the server on port 3000 by calling `app.listen(3000)`.
+
+### Running the Server and Accessing the Results:
+
+1. **Start the Server**: Open your terminal and navigate to the project root directory. Run the command `node index.js` to start the server. You should see a message indicating that the server is running on `http://localhost:3000`.
+
+2. **Access the Results**: Open your web browser and visit `http://localhost:3000`. The browser will make a GET request to the server, and the server will respond by returning the sorted list of `Fruit` objects based on color. The response will be displayed in the browser window.
+
+That's it!  have I created a Node.js project with an API that returns a sorted list of `Fruit` objects based on color.
