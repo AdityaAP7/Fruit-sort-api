@@ -1,5 +1,5 @@
 // models/Fruit.js
-
+1
 class Fruit {
     constructor(id, name, color) {
       this.id = id;
